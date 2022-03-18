@@ -9,7 +9,6 @@ proposal/proposal.pdf
 *.cmake
 CMakeCache.txt
 CMakeFiles/
-tests/*
 main
 build
 checkpoint/checkpoint.pdf
