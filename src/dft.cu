@@ -64,10 +64,8 @@ void ___cufftSafeCall(int err, const char* file, const int line, const char* fun
     }
 }
 
-enum DftFlags {
-    DFT_COMPLEX_INPUT = 64,
-    DFT_DOUBLE = 1024
-};
+#define DFT_COMPLEX_INPUT 64
+#define DFT_DOUBLE 1024
 
 class DFTImplCustom
 {

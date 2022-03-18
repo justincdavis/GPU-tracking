@@ -3,7 +3,7 @@
 #include <opencv2/cudaarithm.hpp>
 #include <opencv2/cudev.hpp>
 #define __OPENCV_BUILD 1
-#include <opencv2/core/private.cuda.hpp>
+#include <opencv2/core/cuda.hpp>
 
 using namespace cv;
 using namespace cv::cuda;
@@ -78,6 +78,9 @@ void cv::cuda::mulSpectrums(InputArray _src1, InputArray _src2, OutputArray _dst
 
     GpuMat src1 = getInputMat(_src1, stream);
     GpuMat src2 = getInputMat(_src2, stream);
+    // GpuMat src1, src2;
+    // _src1.download(src1);
+    // _src2.download(src2);
 
     CV_Assert( src1.type() == src2.type() && src1.type() == CV_64FC2 );
     CV_Assert( src1.size() == src2.size() );

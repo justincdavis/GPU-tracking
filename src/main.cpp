@@ -121,7 +121,8 @@ void test_implementation(bool sequential, bool parallel, VideoCapture &video, Re
 int main(int argc, char **argv)
 {
     // Read video
-    VideoCapture video("tests/chaplin.mp4");
+    // VideoCapture video("tests/chaplin.mp4");
+    VideoCapture video("tests/depth_1.mp4")
 
     // Check video is open
     if(!video.isOpened())
