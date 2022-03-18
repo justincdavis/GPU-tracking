@@ -55,7 +55,7 @@ namespace cv {
     * Constructor
     */
      TackerKCFImplParallel::TackerKCFImplParallel( const TrackerKCF::Params &parameters ) :
-         // params( parameters )
+         params( parameters )
      {
        isInit = false;
        resizeImage = false;
